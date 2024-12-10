@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>Stardew Valley</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    } 
+
+    header {
+      background-color: #99d8d0;
+      padding: 20px;
+    }
+
+    h1 {
+      color: #FFFFFF;
+      font-size: 40px;
+      margin: 0;
+      text-align: center;
+      text-shadow: 2px 2px 0px #3c7a6b;
+    }
+
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+
+    nav li {
+      display: inline-block;
+      margin: 0 10px;
+    }
+
+    nav a {
+      color: #FFFFFF;
+      font-size: 20px;
+      text-decoration: none;
+      text-shadow: 1px 1px 0px #3c7a6b;
+    }
+
+    nav a:hover {
+      color: #3c7a6b;
+    }
+
+    main {
+      background-color: #FFFFFF;
+      margin: 20px;
+      padding: 20px;
+    }
+
+    h2 {
+      color: #3c7a6b;
+      font-size: 30px;
+      margin: 0 0 10px 0;
+    }
+    h3 {
+      text-align: center;
+      color: #3c7a6b;
+      font-size: 25px;
+      margin: 0 0 10px 0;
+    }
+    h4 {
+      text-align: center;
+      color: #3c7a6b;
+      font-size: 20px;
+      margin: 0 0 10px 0;
+    }
+
+    p {
+      color: #808080;
+      font-size: 16px;
+      line-height: 1.5;
+      margin: 0;
+    }
+
+    footer {
+      background-color: #99d8d0;
+      padding: 20px;
+      text-align: center;
+    }
+
+    footer p {
+      color: #FFFFFF;
+      font-size: 14px;
+      margin: 0;
+    }
+    article {
+      border-bottom: 1px solid #99d8d0;
+      margin-bottom: 20px;
+      padding-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1 id="T">Stardew Valley</h1>
+    <nav>
+        <ul>
+          <li class="menu"><a th:href="@{/homepage/home}">Home</a></li>
+          <li class="menu"><a th:href="@{/homepage/story}">Story</a></li>
+          <li class="menu"><a th:href="@{/homepage/gameplay}">Gameplay</a></li>
+          <li class="menu"><a th:href="@{/homepage/characters}">Characters</a></li>
+          <li class="menu"><a th:href="@{/homepage/gallery}">Gallery</a></li>
+          <li class="menu"><a th:href="@{/homepage/contact}">Contact</a></li>
+          <li class="menu"><a th:href="@{/board/list}">공지사항</a></li>
+          </ul>
+    </nav>
+  </header>
+  <main>
+    <h2>Gameplay</h2>
+    <article></article>
+
+    <h3>1 일반적 시스템</h3>
+    <h4><a href="#shdtk">농사</a></h4>
+    <h4><a href="#ahrcnr">목축</a></h4>
+    <h4><a href="#cowlq">채집</a></h4>
+    <h4><a href="#corhkd">채광</a></h4>
+    <h4><a href="#skrtl">낚시</a></h4>
+    <article></article>
+
+    <h3>2 난이도</h3>
+    <h4>세금 X</h4>
+    <h4>식사를 하지 않아도 죽지 않음</h4>
+    <h4>목장이야기와 유사</h4>
+    <article></article>
+
+    <h3>3 싱글, 멀티플레이 모두 지원</h3>
+    <article></article>
+    <p id="shdtk">농사</p>
+    <li><a href=li><a href="https://www.stardewvalley.net/author/concernedape/">참조 영상 바로 가기</a>
+
+    <img src="/assets/img/물.jpg">
+
+    <h4>사게절 존재</h4>
+    <article></article>
+
+    <h4>봄</h4>
+    <br>
+    <p>콜리플라워 / 175g</p>
+    <p>1년차 봄철 작물중 개당 가격이 가장 높은 작물</p>
+    <img src="/assets/img/작물/콜리플라워.png">
+    <br><br>
+    <p>딸기 / 120g</p>
+    <p> 2계절 커피콩에 충분히 맞댈 정도로 수익이 좋다</p>
+    <img src="/assets/img/작물/딸기.png">
+    <br><br>
+    <p>완두콩 / 40g</p>
+    <p>한 번 심어두면 봄이 끝날 때까지 정기적으로 자란다</p>
+    <img src="/assets/img/작물/완두콩.png">
+    <br><br>
+    <p>파스닙 / 35g</p>
+    <p>상당수의 NPC가 좋아하기 때문에 초반 선물로 제격인 작물</p>
+    <img src="/assets/img/작물/파스닙.png">
+    <br><br>
+    <p>감자 / 80g</p>
+    <p>수확 시 확률적으로(25% 정도) 더 나오기도 하기 때문에 콜리플라워의 효율에 버금간다</p>
+    <img src="/assets/img/작물/감자.png">
+    <br><br>
+    <p>케일 / 110g</p>
+    <p>수확 효율은 감자보다 낮지만 개당 가격이 비싼 편에 속하는 작물</p>
+    <img src="/assets/img/작물/케일.png">
+    <br><br>
+    <p>대황 / 220g</p>
+    <p>사막을 가야 하기에 사실상 2년차 작물이다</p>
+    <img src="/assets/img/작물/대황.png">
+    <br><br>
+    <article></article>
+    <br><br>
+    <h4>여름</h4>
+    <br>
+    <p>멜론 / 250g</p>
+    <p>거대 작물 가능 작물들이 그렇듯 거대 작물까지 염두에 두면 효율이 높다</p>
+    <img src="/assets/img/작물/멜론.png">
+    <br><br>
+    <p>블루베리 / 50g</p>
+    <p>한 번에 3개씩 수확하는데, 등급 높이는 비료를 쓰면 효율이 떨어진다</p>
+    <img src="/assets/img/작물/블루베리.png">
+    <br><br>
+    <p>홉 / 25g</p>
+    <p>여름 1일에 심을 경우 여름 작물 중 2번째로 효율이 좋은 작물</p>
+    <img src="/assets/img/작물/홉.png">
+    <br><br>
+    <p>토마토 / 60g</p>
+    <p>감자처럼 수확시 몇 개 더 수확할 때가 있다, 만들 수 있는 음식이 꽤나 많다</p>
+    <img src="/assets/img/작물/토마토.png">
+    <br><br>
+    <p>옥수수 / 55g</p>
+    <p>가을까지 수확 가능, 또띠야 재료인데 콩처럼 호감도 높일 때 유용하다</p>
+    <img src="/assets/img/작물/옥수수.png">
+    <br><br>
+    <p>스타후르츠 / 750g</p>
+    <p>가공이 가능한 작물 중에서 가장 비싸서 와인 재료로 가장 적합한 작물이다</p>
+    <img src="/assets/img/작물/스타후르츠.png">
+    <br><br>
+    <p>해바라기 / 80g</p>
+    <p>작물들 중 유일하게 팔아도 손해를 보는 작물이다</p>
+    <img src="/assets/img/작물/해바라기.png">
+    <br><br>
+    <article></article>
+    <br>
+    <h4>가을</h4>
+    <br>
+    <p>호박 / 320g</p>
+    <p>거대 작물 재배 가능, 쓰임새도 많고 효율도 좋다</p>
+    <img src="/assets/img/작물/호박.png">
+    <br><br>
+    <p>크랜베리 / 75g</p>
+    <p>기본적으로 한번에 2개씩 수확하고, 더 수확할 확률도 있다.</p>
+    <img src="/assets/img/작물/크랜베리.png">
+    <br><br>
+    <p>포도 / 80g</p>
+    <p>여름에 농장 밖에서 채집도 가능, 장대 작물이라서 그런지 효율이 꽤 높은 편</p>
+    <img src="/assets/img/작물/포도.png">
+    <br><br>
+    <p>청경채 / 80g</p>
+    <p>좋아하는 사람이 많아서 선물용으로는 꽤 좋은 작물</p>
+    <img src="/assets/img/작물/청경채.png">
+    <br><br>
+    <p>가지 / 60g</p>
+    <p>거의 번들용＋요리 재료용으로만 키워지는 작물</p>
+    <img src="/assets/img/작물/가지.png">
+    <br><br>
+    <p>사탕무 / 100g</p>
+    <p>풍차에 넣으면 1개당 3개의 설탕(50g)이 나오며 온갖 음식의 재료로 쓰인다</p>
+    <img src="/assets/img/작물/사탕무.png">
+    <br><br>
+    <p>요정 장미 / 290g</p>
+    <p>생산 되는 꿀의 가격은 680g로 모든 꿀 중 가장 높다, 6가지 다른 색상이 나온다.</p>
+    <img src="/assets/img/작물/요정장미.png">
+    <br><br>
+    <article></article>
+    <br>
+    <h4>특별 작물</h4>
+    <br>
+    <p>고대 과일 / 550g</p>
+    <p>과일 기본 가격이 스타후르츠 다음으로 비싸고, 중반 이후 가장 효율적인 돈벌이 수단이다.</p>
+    <img src="/assets/img/작물/고대과일.png">
+    <br><br>
+    <p>선인장 열매 / 320g</p>
+    <p>온실에 둔다면 사시사철 재배가 가능해 의외로 효율은 상당하다</p>
+    <img src="/assets/img/작물/선인장.png">
+    <br><br>
+    <p>달콤보석베리 / 3000g</p>
+    <p>성장 시간이 길지만 가격 자체가 워낙 높아 효율은 모든 작물 중 가장 높다</p>
+    <img src="/assets/img/작물/달콤보석베리.png">
+    <br><br><br>
+    <article></article>
+    <br><br>
+    <p id="ahrcnr">목축</p>
+    <br>
+    <h3>종류</h3> <br>
+    <p>이름, 사진, 생산품, 가공품 순</p>
+    <br><br><br> <article></article>
+
+    <p>닭</p>
+    <img src="/assets/img/목축/닭.png">
+    <p>달걀</p>
+    <img src="/assets/img/목축/달걀.png">
+    <p>마요네즈</p>
+    <img src="/assets/img/목축/마요네즈.png" alt="">
+    <br><br>
+    <article></article>
+
+    <p>공룡</p>
+    <img src="/assets/img/목축/공룡.webp">
+    <p>공룡알</p>
+    <img src="/assets/img/목축/공룡알.png">
+    <p>공룡 마요네즈</p>
+    <img src="/assets/img/목축/공룡마요네즈.png" alt="">
+    <br><br>
+    <article></article>
+
+    <p>토끼</p>
+    <img src="/assets/img/목축/토끼.png">
+    <p>토끼털</p>
+    <img src="/assets/img/목축/토끼털.png">
+    <p>토끼발</p>
+    <img src="/assets/img/목축/토끼발.png">
+    <p>옷감</p>
+    <img src="/assets/img/목축/옷감.png" alt="">
+    <br><br>
+    <article></article>
+
+    <p>젖소</p>
+    <img src="/assets/img/목축/젖소.png">
+    <p>우유</p>
+    <img src="/assets/img/목축/우유.png">
+    <p>치즈</p>
+    <img src="/assets/img/목축/치즈.png" alt="">
+    <br><br>
+    <article></article>
+
+    <p>염소</p>
+    <img src="/assets/img/목축/염소.png">
+    <p>염소젖</p>
+    <img src="/assets/img/목축/염소젖.png">
+    <p>염소젖 치즈</p>
+    <img src="/assets/img/목축/염소치즈.png" alt="">
+    <br><br>
+    <article></article>
+
+    <p>양</p>
+    <img src="/assets/img/목축/양.png">
+    <p>양털</p>
+    <img src="/assets/img/목축/양털.png">
+    <p>옷감</p>
+    <img src="/assets/img/목축/옷감.png" alt="">
+    <br><br>
+    <article></article>
+
+    <p>돼지</p>
+    <img src="/assets/img/목축/돼지.png">
+    <p>송로버섯</p>
+    <img src="/assets/img/목축/송로버섯.png">
+    <p>송로버섯 기름</p>
+    <img src="/assets/img/목축/기름.png" alt="">
+    <br><br>
+    <article></article>
+
+    <p>타조</p>
+    <img src="/assets/img/목축/타조.webp">
+    <p>타조알</p>
+    <img src="/assets/img/목축/타조알.png">
+    <p>마요네즈 10개</p>
+    <img src="/assets/img/목축/마요네즈.png" alt="">
+    <br><br>
+    <article></article>
+    <br><br>
+
+    <p id="cowlq">채집</p>
+
+    <h3>봄</h3>
+    <br>
+
+    <p>고추냉이</p>
+    <img src="/assets/img/채집/고추냉이.png">
+    <p>봄에 볼 수 있는 매콤한 식물 뿌리</p>
+    <br>
+
+    <p>수선화</p>
+    <img src="/assets/img/채집/수선화.png">
+    <p>전형적인 봄꽃으로, 선물로도 좋습니다</p>
+    <br>
+
+    <p>리크</p>
+    <img src="/assets/img/채집/리크.png">
+    <p>양파의 맛있는 친척</p>
+    <br>
+
+    <p>민들레</p>
+    <img src="/assets/img/채집/민들레.png">
+    <p>가장 예쁜 꽃은 아니지만, 잎으로 맛있는 샐러드를 만들 수 있습니다</p>
+    <br>
+
+    <p>새먼베리</p>
+    <img src="/assets/img/채집/새먼베리.png">
+    <p>숲의 풍미가 나는 봄철 베리</p>
+    <br>
+    <br><br><br>
+
+
+    <h3>여름</h3>
+    <br>
+
+    <p>백량금</p>
+    <img src="/assets/img/채집/백량금.png">
+    <p>톡 쏘는 향이 납니다</p>
+    <br>
+
+    <p>포도</p>
+    <img src="/assets/img/작물/포도.png">
+    <p>달콤한 과일 한 송이</p>
+    <br>
+
+    <p>스위트피</p>
+    <img src="/assets/img/채집/스위트피.png">
+    <p>향긋한 여름철 꽃</p>
+    <br>
+
+    <p>청나래 고사리</p>
+    <img src="/assets/img/채집/청나래고사리.png">
+    <p>어린 새싹은 식용가능한 별미입니다</p>
+    <br><br><br>
+
+    <h3>가을</h3>
+    <br>
+
+    <p>야생 자두</p>
+    <img src="/assets/img/채집/야생자두.png">
+    <p>톡 쏘는 향과 맛이 나고, 과즙이 많습니다</p>
+    <br>
+
+    <p>헤이즐넛</p>
+    <img src="/assets/img/채집/헤이즐넛.png">
+    <p>정말 큰 헤이즐넛입니다</p>
+    <br>
+
+    <p>블랙베리</p>
+    <img src="/assets/img/채집/블랙베리.png">
+    <p>초가을 별미</p>
+    <br>
+
+    <p>보라색 버섯</p>
+    <img src="/assets/img/채집/보라색버섯.png">
+    <p>동굴 깊은 곳에서 발견되는 희귀한 버섯</p>
+    <br><br><br>
+
+    <h3>겨울</h3>
+    <br>
+
+    <p>겨울뿌리</p>
+    <img src="/assets/img/채집/겨울뿌리.png">
+    <p>탄수화물이 가득한 덩이줄기 식물</p>
+    <br>
+
+    <p>수정 과일</p>
+    <img src="/assets/img/채집/수정과일.png">
+    <p>눈에서 솟아나는 여린 과일</p>
+    <br>
+
+    <p>눈마</p>
+    <img src="/assets/img/채집/눈마.png">
+    <p>눈 밑에 숨어있던 작은 마</p>
+    <br>
+
+    <p>크로커스</p>
+    <img src="/assets/img/채집/크로커스.png">
+    <p>겨울에 피는 꽃</p>
+    <br><br><br>
+    <article></article>
+
+    <h3>광산</h3>
+    <br>
+
+    <p>붉은 버섯</p>
+    <img src="/assets/img/채집/붉은버섯.png">
+    <p>동굴에서 발견되는 얼룩무늬 버섯</p>
+    <br>
+
+    <p>보라색 버섯</p>
+    <img src="/assets/img/채집/보라색버섯.png">
+    <p>동굴 깊은 곳에서 발견되는 희귀한 버섯</p>
+    <br>
+
+    <p>동굴 당근</p>
+    <img src="/assets/img/채집/동굴당근.png">
+    <p>동굴에서 발견되는 전분이 많은 간식. 광부들이 일을 더 오래할 수 있게 해줍니다</p>
+    <br><br><br>
+    <article></article>
+
+    <h3>해변</h3>
+    <br>
+
+    <p>앵무조개 껍데기</p>
+    <img src="/assets/img/채집/앵무조개껍데기.png">
+    <p>고대 껍데기</p>
+    <br>
+
+    <p>산호</p>
+    <img src="/assets/img/채집/산호.png">
+    <p>작은 생물체들이 무리 지어 형성한 아름다운 구조물</p>
+    <br>
+
+    <p>성게</p>
+    <img src="/assets/img/채집/성게.png">
+    <p>천천히 움직이는 가시 돋친 생물체로, 몇몇 사람들은 진미로 취급합니다</p>
+    <br>
+
+    <p>무지개 껍데기</p>
+    <img src="/assets/img/채집/무지개껍데기.png">
+    <p>아주 아름다운 껍데기</p>
+    <br>
+
+    <p>조개</p>
+    <img src="/assets/img/채집/조개.png">
+    <p>한때 누군가 여기 살았습니다</p>
+    <br>
+
+    <p>해초</p>
+    <img src="/assets/img/채집/해초.png">
+    <p>요리에 사용할 수 있습니다</p>
+    <br><br><br>
+    <article></article>
+    </a>
+  </main>
+
+    
+
+    
+
+
+    
+
+    
+    
+
+   

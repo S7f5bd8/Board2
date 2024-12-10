@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>Stardew Valley</title>
+  <style>
+    body {
+      text-align: center;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #99d8d0;
+      padding: 20px;
+    }
+
+    h1 {
+      color: #FFFFFF;
+      font-size: 40px;
+      margin: 0;
+      text-align: center;
+      text-shadow: 2px 2px 0px #3c7a6b;
+    }
+
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+
+    nav li {
+      display: inline-block;
+      margin: 0 10px;
+    }
+
+    nav a {
+      text-align: center;
+      color: #FFFFFF;
+      font-size: 20px;
+      text-decoration: none;
+      text-shadow: 1px 1px 0px #3c7a6b;
+    }
+
+    nav a:hover {
+      text-align: center;
+      color: #3c7a6b;
+    }
+
+    main {
+      text-align: center;
+      background-color: #FFFFFF;
+      margin: 20px;
+      padding: 20px;
+    }
+
+    h2 {
+      text-align: center;
+      color: #3c7a6b;
+      font-size: 30px;
+      margin: 0 0 10px 0;
+    }
+
+    p {
+      text-align: center;
+      color: #808080;
+      font-size: 16px;
+      line-height: 1.5;
+      margin: 0;
+    }
+
+    footer {
+      text-align: center;
+      background-color: #99d8d0;
+      padding: 20px;
+      text-align: center;
+    }
+
+    footer p {
+      text-align: center;
+      color: #FFFFFF;
+      font-size: 14px;
+      margin: 0;
+    }
+    article {
+      text-align: center;
+      border-bottom: 1px solid #99d8d0;
+      margin-bottom: 20px;
+      padding-bottom: 20px;
+    }
+  </style> 
+</head>
+<body>
+  <header>
+    <h1>Stardew Valley</h1>
+    <nav>
+        <ul>
+            <li class="menu"><a th:href="@{/homepage/home}">Home</a></li>
+            <li class="menu"><a th:href="@{/homepage/story}">Story</a></li>
+            <li class="menu"><a th:href="@{/homepage/gameplay}">Gameplay</a></li>
+            <li class="menu"><a th:href="@{/homepage/characters}">Characters</a></li>
+            <li class="menu"><a th:href="@{/homepage/gallery}">Gallery</a></li>
+            <li class="menu"><a th:href="@{/homepage/contact}">Contact</a></li>
+            <li class="menu"><a th:href="@{/board/list}">공지사항</a></li>
+          </ul>
+    </nav>
+  </header>
+  <main>
+    <h2>Stroy</h2>
+    <p>대기업 조자 그룹에 근무하던 평범한 사원으로 기계처럼 일하는 삶에 염증을 느끼던 찰나</p>
+    <p>할아버지가 남긴 편지를 꺼내 읽고서 물 좋고 공기 좋은 남쪽 계곡, 스타듀 밸리로 이사를 온다.</p>
+    <p>처음 농장에 도착했을 때에는 관리가 전혀 안 된 모습을 보고 경악하나,</p>
+    <p>할아버지가 생전 농사짓던 땅이기도 하고,</p>
+    <p>사랑하는 손주인 주인공에게 삶의 전환점을 선물하기 위해 물려 준 할아버지를 생각하며</p>
+    <p>이내 농장일에 적응해 가며 마을에 일원으로 녹아든다.</p>
+    <article></article>
+  </main>

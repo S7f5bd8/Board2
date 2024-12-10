@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>Stardew Valley</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+
+    header {
+      background-color: #99d8d0;
+      padding: 20px;
+    }
+
+    h1 {
+      color: #FFFFFF;
+      font-size: 40px;
+      margin: 0;
+      text-align: center;
+      text-shadow: 2px 2px 0px #3c7a6b;
+    }
+
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+
+    nav li {
+      display: inline-block;
+      margin: 0 10px;
+    }
+
+    nav a {
+      color: #FFFFFF;
+      font-size: 20px;
+      text-decoration: none;
+      text-shadow: 1px 1px 0px #3c7a6b;
+    }
+
+    nav a:hover {
+      color: #3c7a6b;
+    }
+
+    main {
+      background-color: #FFFFFF;
+      margin: 20px;
+      padding: 20px;
+    }
+
+    h2 {
+      color: #3c7a6b;
+      font-size: 30px;
+      margin: 0 0 10px 0;
+    }
+
+    p {
+      color: #808080;
+      font-size: 16px;
+      line-height: 1.5;
+      margin: 0;
+    }
+
+    footer {
+      background-color: #99d8d0;
+      padding: 20px;
+      text-align: center;
+    }
+
+    footer p {
+      color: #FFFFFF;
+      font-size: 14px;
+      margin: 0;
+    }
+    article {
+      border-bottom: 1px solid #99d8d0;
+      margin-bottom: 20px;
+      padding-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Stardew Valley</h1>
+    <nav>
+      <ul>
+        <li class="menu"><a th:href="@{/homepage/home}">Home</a></li>
+        <li class="menu"><a th:href="@{/homepage/story}">Story</a></li>
+        <li class="menu"><a th:href="@{/homepage/gameplay}">Gameplay</a></li>
+        <li class="menu"><a th:href="@{/homepage/characters}">Characters</a></li>
+        <li class="menu"><a th:href="@{/homepage/gallery}">Gallery</a></li>
+        <li class="menu"><a th:href="@{/homepage/contact}">Contact</a></li>
+        <li class="menu"><a th:href="@{/board/list}">공지사항</a></li>
+
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <h2>Introduce</h2>
+    <p>Stardew Valley는 ConcernedApe가 개발한 농장 시뮬레이션 게임</p>
+    <p>게임에서 플레이어는 상속받은 농장을 발전시키고,</p>
+    <p>마을 주민들과 교류하고 관계를 발전시키며 삶을 살아간다.</p>
+    <p>게임은 2016년에 출시되었으며, PC, Xbox, PlayStation, Nintendo, Switch 등에서 플레이할 수 있다.</p>
+    <article></article>
+    <img src="/assets/img/logo.jpg" alt="">
+  </main>
